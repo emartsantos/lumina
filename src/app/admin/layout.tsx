@@ -37,7 +37,7 @@ async function AdminGate({ children }: { children: ReactNode }) {
               <Link href="/" className="inline-flex items-center gap-2.5">
                 <Logomark className="h-6 w-6" />
                 <span className="font-mono text-[0.62rem] uppercase tracking-label text-fg-muted">
-                  Lumina Admin
+                  Admin Console
                 </span>
               </Link>
             </div>

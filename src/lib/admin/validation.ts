@@ -2,6 +2,18 @@ import { z } from "zod";
 
 export const publishStatus = z.enum(["DRAFT", "PUBLISHED", "ARCHIVED"]);
 
+export const adminRole = z.enum(["ADMIN", "EDITOR", "VIEWER"]);
+
+export const staffSchema = z.object({
+  email: z
+    .email("Enter a valid email address")
+    .max(200, "Email is too long"),
+  name: z.string().trim().max(160),
+  role: adminRole,
+});
+
+export type StaffInput = z.infer<typeof staffSchema>;
+
 export const providerSchema = z.object({
   id: z.string().optional(),
   slug: z

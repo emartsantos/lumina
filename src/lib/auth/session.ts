@@ -26,9 +26,25 @@ export const getAdminSession = cache(async (): Promise<AdminSession | null> => {
   const sub = session?.user?.sub;
   if (!sub) return null;
 
-  const admin = await prisma.adminUser.findUnique({
+  let admin = await prisma.adminUser.findUnique({
     where: { auth0Sub: sub },
   });
+
+  // Link a staff account an administrator pre-created by email the first time
+  // that person signs in with Auth0.
+  const email = session?.user?.email?.trim().toLowerCase();
+  if (!admin && email) {
+    const invited = await prisma.adminUser.findUnique({ where: { email } });
+    if (invited && !invited.auth0Sub) {
+      admin = await prisma.adminUser.update({
+        where: { id: invited.id },
+        data: {
+          auth0Sub: sub,
+          name: invited.name ?? session?.user?.name ?? null,
+        },
+      });
+    }
+  }
 
   if (!admin || !admin.active) return null;
 

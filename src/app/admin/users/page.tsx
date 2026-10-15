@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { prisma } from "@/lib/db/prisma";
 import { requireRole } from "@/lib/auth/session";
-import { Badge, EmptyState, PageHeader, Panel } from "@/components/admin/ui";
+import { Badge, EmptyState, LinkButton, PageHeader, Panel } from "@/components/admin/ui";
 import { formatDateTime } from "@/lib/utils";
 import { UserRowActions } from "./UserRowActions";
 
@@ -18,7 +18,8 @@ export default async function UsersPage() {
     <div className="flex flex-col gap-8">
       <PageHeader
         title="Users & roles"
-        description="Staff access to the admin platform. Accounts are created on first sign-in and then activated here. You cannot change your own role or status."
+        description="Staff access to the admin platform. Add a staff member here, then they are linked automatically the first time they sign in with Auth0. You cannot change your own role or status."
+        actions={<LinkButton href="/admin/users/new">Add staff</LinkButton>}
       />
 
       <Panel title={`${users.length} account${users.length === 1 ? "" : "s"}`}>
@@ -57,6 +58,11 @@ export default async function UsersPage() {
                       <Badge tone={user.active ? "accent" : "danger"}>
                         {user.active ? "Active" : "Disabled"}
                       </Badge>
+                      {user.auth0Sub === null ? (
+                        <span className="ml-2">
+                          <Badge tone="amber">Invited</Badge>
+                        </span>
+                      ) : null}
                     </td>
                     <td className="px-5 py-3 text-fg-subtle">
                       {formatDateTime(user.updatedAt)}
