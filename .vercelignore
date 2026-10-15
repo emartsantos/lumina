@@ -1,0 +1,19 @@
+# Prevent local secrets and tooling from being uploaded to Vercel.
+# NOTE: `vercel deploy` does NOT honor .gitignore, so these must be listed here.
+.env
+.env.*
+!.env.example
+
+# Local AI assistant tooling
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
+
+# Local/build artifacts
+.git/
+.next/
+node_modules/
+*.log
+*.tsbuildinfo
+next-env.d.ts
