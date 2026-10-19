@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/site/JsonLd";
 export const metadata: Metadata = buildMetadata({
   title: "Services",
   description:
-    "Virtual primary care, same-day urgent care, mental health and therapy, dermatology, prescriptions and refills, and women's health — delivered by licensed clinicians in all fifty states.",
+    "Virtual primary care, same day urgent care, mental health and therapy, dermatology, prescriptions and refills, and women's health — delivered by licensed clinicians in all fifty states.",
   path: "/services",
 });
 

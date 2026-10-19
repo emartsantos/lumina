@@ -1,7 +1,9 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { PageHero } from "@/components/site/PageHero";
 import { RichText } from "@/components/site/RichText";
 import { MetricRow } from "@/components/site/Metric";
@@ -34,10 +36,20 @@ export async function generateMetadata(
   });
 }
 
-export default async function SpecialtyPage(
-  props: PageProps<"/specialties/[slug]">,
-) {
-  const { slug } = await props.params;
+export default function SpecialtyPage(props: PageProps<"/specialties/[slug]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <SpecialtyDetail params={props.params} />
+    </Suspense>
+  );
+}
+
+async function SpecialtyDetail({
+  params,
+}: {
+  params: PageProps<"/specialties/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const [specialty, stories] = await Promise.all([
     getSpecialty(slug),
     getStories(),

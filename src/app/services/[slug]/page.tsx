@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { PageHero } from "@/components/site/PageHero";
 import { RichText } from "@/components/site/RichText";
 import { MetricRow } from "@/components/site/Metric";
@@ -30,10 +32,20 @@ export async function generateMetadata(
   });
 }
 
-export default async function ServicePage(
-  props: PageProps<"/services/[slug]">,
-) {
-  const { slug } = await props.params;
+export default function ServicePage(props: PageProps<"/services/[slug]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <ServiceDetail params={props.params} />
+    </Suspense>
+  );
+}
+
+async function ServiceDetail({
+  params,
+}: {
+  params: PageProps<"/services/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const [service, services] = await Promise.all([
     getService(slug),
     getServices(),

@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { Rule } from "@/components/site/Rule";
@@ -35,8 +37,20 @@ export async function generateMetadata(
   });
 }
 
-export default async function StoryPage(props: PageProps<"/stories/[slug]">) {
-  const { slug } = await props.params;
+export default function StoryPage(props: PageProps<"/stories/[slug]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <StoryDetail params={props.params} />
+    </Suspense>
+  );
+}
+
+async function StoryDetail({
+  params,
+}: {
+  params: PageProps<"/stories/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const story = await getStory(slug);
   if (!story) notFound();
 

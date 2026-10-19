@@ -6,7 +6,7 @@ export const services: Service[] = [
     title: "Virtual primary care",
     tagline: "A doctor who knows your name",
     summary:
-      "A dedicated clinician for you and your family. Same-week visits by secure video, ongoing care, and someone who remembers your history.",
+      "A dedicated clinician for you and your family. Same week visits by secure video, ongoing care, and someone who remembers your history.",
     order: 1,
     capabilities: [
       {
@@ -15,12 +15,12 @@ export const services: Service[] = [
           "Choose a primary care clinician and keep them over time. They follow your history, refills, and referrals instead of starting from scratch each visit.",
       },
       {
-        title: "Same-week appointments",
+        title: "Same week appointments",
         detail:
           "Most patients are seen within the same week, with evening and weekend slots for the people who need them.",
       },
       {
-        title: "Whole-person visits",
+        title: "Whole person visits",
         detail:
           "Unhurried appointments that cover prevention, chronic conditions, medications, and the questions you did not get to ask last time.",
       },
@@ -31,7 +31,7 @@ export const services: Service[] = [
       },
     ],
     outcomes: [
-      { value: "Same-week", label: "Appointments", note: "Often within days" },
+      { value: "Same week", label: "Appointments", note: "Often within days" },
       { value: "50 states", label: "Licensed coverage" },
       { value: "4.9/5", label: "Patient rating" },
     ],
@@ -43,14 +43,14 @@ export const services: Service[] = [
       { kind: "h2", text: "Care that fits your life" },
       {
         kind: "p",
-        text: "You do not need to take a day off work for a check-in. Join from your kitchen, your car, or your office. Most visits take about thirty minutes, and you spend that time talking with your clinician rather than sitting in a waiting room.",
+        text: "You do not need to take a day off work just to check in. Join from your kitchen, your car, or your office. Most visits take about thirty minutes, and you spend that time talking with your clinician rather than sitting in a waiting room.",
       },
       {
         kind: "list",
         items: [
           "Annual wellness visits and preventive screenings.",
           "Management of ongoing conditions like diabetes, blood pressure, and asthma.",
-          "Referrals to specialists and coordinated follow-up.",
+          "Referrals to specialists and coordinated follow up.",
           "Medication reviews and prescription refills.",
           "Clear next steps sent to your app after every visit.",
           "Family plans that cover the people in your household.",
@@ -65,7 +65,7 @@ export const services: Service[] = [
   },
   {
     slug: "same-day-urgent-care",
-    title: "Same-day urgent care",
+    title: "Same day urgent care",
     tagline: "Care now, from wherever you are",
     summary:
       "Feeling unwell today? Get seen today. Virtual urgent care for common illnesses and injuries, with a clinician on every visit.",
@@ -87,7 +87,7 @@ export const services: Service[] = [
           "When medication helps, prescriptions are sent to the pharmacy of your choice, often the same day.",
       },
       {
-        title: "After-hours and weekends",
+        title: "After hours and weekends",
         detail:
           "Care when clinics are closed, including evenings, weekends, and holidays, across all fifty states.",
       },
@@ -105,7 +105,7 @@ export const services: Service[] = [
       { kind: "h2", text: "Real care, real fast" },
       {
         kind: "p",
-        text: "Every urgent visit is with a licensed clinician, not a script or a chatbot. They ask questions, make an assessment, and explain what they think is happening in plain language. If you need in-person care, they will tell you and help you find it.",
+        text: "Every urgent visit is with a licensed clinician, not a script or a chatbot. They ask questions, make an assessment, and explain what they think is happening in plain language. If you need to be seen in person, they will tell you and help you find it.",
       },
       {
         kind: "list",
@@ -201,14 +201,14 @@ export const services: Service[] = [
           "Share clear photos and a short description from your phone. No referral and no long wait for a first appointment.",
       },
       {
-        title: "Board-certified clinicians",
+        title: "Board certified clinicians",
         detail:
           "Your concern is reviewed by a dermatology clinician who diagnoses, treats, and follows your progress over time.",
       },
       {
         title: "Treatment plans that work",
         detail:
-          "Prescriptions, skincare routines, and step-by-step plans you can actually follow, adjusted as your skin responds.",
+          "Prescriptions, skincare routines, and clear plans you can actually follow, adjusted as your skin responds.",
       },
       {
         title: "Ongoing skin care",
@@ -239,7 +239,7 @@ export const services: Service[] = [
           "Rashes and allergic skin reactions.",
           "Rosacea and other redness.",
           "Fungal and bacterial skin infections.",
-          "Mole and spot checks with guidance on in-person follow-up.",
+          "Mole and spot checks with guidance on following up in person.",
         ],
       },
       {
@@ -275,7 +275,7 @@ export const services: Service[] = [
       {
         title: "Medication questions answered",
         detail:
-          "Ask about side effects, dosing, or interactions and get a plain-language answer from your care team.",
+          "Ask about side effects, dosing, or interactions and get an answer in plain language from your care team.",
       },
     ],
     outcomes: [
@@ -332,7 +332,7 @@ export const services: Service[] = [
       {
         title: "Treatment with a clear plan",
         detail:
-          "Prescriptions, preventive guidance, and next steps explained in plain language, with follow-up when you need it.",
+          "Prescriptions, preventive guidance, and next steps explained in plain language, with follow up when you need it.",
       },
       {
         title: "Private and convenient",
@@ -341,7 +341,7 @@ export const services: Service[] = [
       },
     ],
     outcomes: [
-      { value: "Same-week", label: "Appointments" },
+      { value: "Same week", label: "Appointments" },
       { value: "50 states", label: "Licensed coverage" },
       { value: "No waiting rooms", label: "Private and convenient" },
     ],
@@ -362,7 +362,7 @@ export const services: Service[] = [
           "Irregular, heavy, or painful periods.",
           "Urinary tract infections and yeast infections.",
           "Menopause and perimenopause support.",
-          "Preventive screenings and routine check-ins.",
+          "Preventive screenings and routine check ins.",
           "Confidential care from home, on your schedule.",
         ],
       },

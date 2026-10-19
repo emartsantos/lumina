@@ -1,7 +1,9 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { RichText } from "@/components/site/RichText";
 import { Rule } from "@/components/site/Rule";
@@ -36,10 +38,22 @@ export async function generateMetadata(
   });
 }
 
-export default async function InsightArticlePage(
+export default function InsightArticlePage(
   props: PageProps<"/insights/[slug]">,
 ) {
-  const { slug } = await props.params;
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <InsightArticle params={props.params} />
+    </Suspense>
+  );
+}
+
+async function InsightArticle({
+  params,
+}: {
+  params: PageProps<"/insights/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const [insight, insights] = await Promise.all([
     getInsight(slug),
     getInsights(),

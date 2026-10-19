@@ -166,7 +166,7 @@ export function ProviderForm({
           rows={6}
           defaultValue={value.bio}
           className={textareaClass}
-          placeholder="Public-facing biography. Do not include patient information or private contact details."
+          placeholder="Biography shown on the public site. Do not include patient information or private contact details."
         />
       </Field>
 

@@ -16,7 +16,7 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "How it works",
   description:
-    "Getting care with Lumina is simple: sign up, get matched with a licensed clinician, have a secure video visit, and leave with a follow-up plan and prescriptions where needed.",
+    "Getting care with Lumina is simple: sign up, get matched with a licensed clinician, have a secure video visit, and leave with a follow up plan and prescriptions where needed.",
   path: "/how-it-works",
 });
 
@@ -37,7 +37,7 @@ const steps = [
       "Meet by encrypted video from wherever you are. Unhurried appointments, usually about thirty minutes.",
   },
   {
-    name: "Follow-up plan & prescriptions",
+    name: "Follow up plan & prescriptions",
     detail:
       "Leave with clear next steps in your app, plus prescriptions sent to your pharmacy when they help.",
   },
@@ -70,7 +70,7 @@ export default async function HowItWorksPage() {
         ]}
         eyebrow="How it works"
         title="Good care, without the waiting room."
-        intro="Lumina is a nationwide virtual practice. From your first sign-up to your follow-up plan, care is designed to be simple, respectful, and easy to reach."
+        intro="Lumina is a nationwide virtual practice. From creating your account to the care plan you leave with, everything is designed to be simple, respectful, and easy to reach."
         aside={
           <ButtonLink href="/contact" variant="primary" size="md" arrow>
             Start a visit
@@ -98,8 +98,8 @@ export default async function HowItWorksPage() {
             <SectionHeader
               index="01"
               eyebrow="Your visit"
-              title="Four simple steps from sign-up to follow-up."
-              intro="No referrals to chase for most concerns, no long forms, and no months-long wait for a first appointment."
+              title="Four simple steps, from sign up to your care plan."
+              intro="No referrals to chase for most concerns, no long forms, and no months of waiting for a first appointment."
             />
           </Reveal>
           <div className="mt-14 grid gap-16 lg:grid-cols-[1fr_1.3fr] lg:items-center">
@@ -150,7 +150,7 @@ export default async function HowItWorksPage() {
                   ))}
                 </div>
                 <p className="mt-6 font-mono text-[0.6rem] uppercase tracking-label text-fg-subtle">
-                  From sign-up to follow-up · no waiting room · from anywhere
+                  From sign up to care plan · no waiting room · from anywhere
                 </p>
               </div>
             </Reveal>

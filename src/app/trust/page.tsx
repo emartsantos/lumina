@@ -12,7 +12,7 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Trust & safety",
   description:
-    "How Lumina Health & Wellness protects your information: licensed clinicians, HIPAA-aligned safeguards in the clinical platform, secure video, careful data practices, and accessible care.",
+    "How Lumina Health & Wellness protects your information: licensed clinicians, HIPAA aligned safeguards in the clinical platform, secure video, careful data practices, and accessible care.",
   path: "/trust",
 });
 
@@ -30,7 +30,7 @@ const controls = [
   {
     title: "Your health information",
     detail:
-      "Protected health information is handled in our clinical platform under HIPAA-aligned safeguards and a signed patient agreement.",
+      "Protected health information is handled in our clinical platform under HIPAA aligned safeguards and a signed patient agreement.",
   },
   {
     title: "This website",
@@ -51,7 +51,7 @@ const controls = [
 
 const practices = [
   { label: "Licensure", value: "Licensed clinicians in all 50 states" },
-  { label: "Privacy", value: "HIPAA-aligned safeguards · CCPA" },
+  { label: "Privacy", value: "HIPAA aligned safeguards · CCPA" },
   { label: "Security", value: "SOC 2 Type II" },
   { label: "Accessibility", value: "Designed and tested toward WCAG 2.2 AA" },
 ];
@@ -147,8 +147,8 @@ export default async function TrustPage() {
           <p className="mt-6 max-w-2xl text-xs leading-relaxed text-fg-subtle">
             This public website does not collect health information. Protected
             health information is handled within our clinical platform under
-            HIPAA-aligned safeguards and the patient agreement you sign before care
-            begins. The website itself is not claimed to be HIPAA-compliant.
+            HIPAA aligned safeguards and the patient agreement you sign before care
+            begins. The website itself is not claimed to be HIPAA compliant.
             Security documentation and accessibility details are available on
             request. We aim to design and test against WCAG 2.2 AA and do not claim
             formal certification beyond the standards listed above.

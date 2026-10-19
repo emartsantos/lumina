@@ -6,7 +6,7 @@ export const stories: Story[] = [
     client: "A. R.",
     sector: "Virtual primary care",
     specialtySlug: "family-medicine",
-    title: "Same-week care for a persistent cough",
+    title: "Same week care for a persistent cough",
     summary: "A member was able to connect with a clinician the same week and get a clear care plan without taking time off work.",
     year: "2025",
     services: ["Virtual visits", "Prescription support", "Care guidance"],
@@ -15,13 +15,13 @@ export const stories: Story[] = [
     approach: [
       "Booked a secure video visit within days of reaching out.",
       "Clinician reviewed symptoms and history in a focused visit.",
-      "Clear follow-up steps and home care guidance were provided.",
+      "Clear follow up steps and home care guidance were provided.",
       "Open pathway to follow up if symptoms changed.",
     ],
     results: [
       { value: "5 days", label: "Time to visit" },
       { value: "12 min", label: "Average wait time" },
-      { value: "3", label: "Follow-up check-ins scheduled" },
+      { value: "3", label: "Follow up visits scheduled" },
     ],
     quote: {
       text: "The visit was quick and clear. I knew exactly what to do next and didn't have to miss a full day of work.",
@@ -35,7 +35,7 @@ export const stories: Story[] = [
       },
       {
         kind: "p",
-        text: "The member reached out when a lingering cough was interfering with daily life. They were able to book a same-week virtual visit and connect with a clinician from a quiet, private space at home.",
+        text: "The member reached out when a lingering cough was interfering with daily life. They were able to book a virtual visit in the same week and connect with a clinician from a quiet, private space at home.",
       },
       {
         kind: "p",
@@ -44,7 +44,7 @@ export const stories: Story[] = [
       {
         kind: "list",
         items: [
-          "Same-week video visit with a licensed clinician",
+          "Same week video visit with a licensed clinician",
           "Clear instructions for home care",
           "Easy way to follow up if symptoms changed",
         ],
@@ -64,19 +64,19 @@ export const stories: Story[] = [
     title: "Support for a teen navigating anxiety",
     summary: "The family found timely, compassionate mental health support in a private virtual setting.",
     year: "2025",
-    services: ["Mental health visits", "Care coordination", "Follow-up support"],
+    services: ["Mental health visits", "Care coordination", "Ongoing support"],
     featured: true,
     challenge: "The family was concerned about rising anxiety for their teen and didn't know where to start.",
     approach: [
       "Private consultation to understand concerns and preferences.",
       "Matched with a licensed clinician experienced in adolescent care.",
       "Developed coping strategies and a safety plan together.",
-      "Scheduled a follow-up to check in over time.",
+      "Scheduled a visit to check in over time.",
     ],
     results: [
       { value: "7 days", label: "Time to first appointment" },
       { value: "4", label: "Visits to reach a care plan" },
-      { value: "90%", label: "Follow-up attendance" },
+      { value: "90%", label: "Attendance at follow up visits" },
     ],
     quote: {
       text: "We felt heard. Our teen was comfortable, and we finally had a plan.",
@@ -94,14 +94,14 @@ export const stories: Story[] = [
       },
       {
         kind: "p",
-        text: "The clinician worked with the family and teen to build practical coping tools and a clear care plan. Regular check-ins helped keep things on track.",
+        text: "The clinician worked with the family and teen to build practical coping tools and a clear care plan. Regular check ins helped keep things on track.",
       },
       {
         kind: "list",
         items: [
           "Private, secure video visits",
-          "Age-appropriate support focused on practical tools",
-          "Ongoing follow-up with the same care team",
+          "Age appropriate support focused on practical tools",
+          "Ongoing follow up with the same care team",
         ],
       },
       {
@@ -117,16 +117,16 @@ export const stories: Story[] = [
     sector: "Dermatology",
     specialtySlug: "dermatology",
     title: "Timely care for a skin concern",
-    summary: "A member got a clear evaluation and plan for a persistent skin issue without an in-person wait.",
+    summary: "A member got a clear evaluation and plan for a persistent skin issue without a trip to a clinic.",
     year: "2025",
     services: ["Virtual dermatology", "Photo review", "Care guidance"],
     featured: false,
-    challenge: "A persistent skin concern was causing discomfort, but the nearest in-person appointment was weeks away.",
+    challenge: "A persistent skin concern was causing discomfort, but the nearest clinic appointment was weeks away.",
     approach: [
       "Submitted photos and a short history before the visit.",
       "Connected with a licensed dermatologist virtually.",
       "Received clear guidance and next steps for care.",
-      "Follow-up path in place if changes occurred.",
+      "A path to follow up if changes occurred.",
     ],
     results: [
       { value: "3 days", label: "Time to appointment" },
@@ -154,9 +154,9 @@ export const stories: Story[] = [
       {
         kind: "list",
         items: [
-          "Pre-visit photo review for efficient care",
+          "Photo review before the visit",
           "Licensed dermatology clinician",
-          "Clear next steps without an unnecessary in-person trip",
+          "Clear next steps without an unnecessary trip to a clinic",
         ],
       },
       {
@@ -172,21 +172,21 @@ export const stories: Story[] = [
     sector: "Chronic care",
     specialtySlug: "chronic-care",
     title: "Staying on track with chronic care",
-    summary: "Regular virtual check-ins helped a member stay consistent with their care plan and feel more confident day to day.",
+    summary: "Regular virtual check ins helped a member stay consistent with their care plan and feel more confident day to day.",
     year: "2026",
-    services: ["Chronic care check-ins", "Care coordination", "Lifestyle guidance"],
+    services: ["Chronic care check ins", "Care coordination", "Lifestyle guidance"],
     featured: true,
     challenge: "Managing a chronic condition was feeling overwhelming between busy work and family responsibilities.",
     approach: [
-      "Scheduled regular check-ins with a consistent clinician.",
+      "Scheduled regular check ins with a consistent clinician.",
       "Reviewed medications, goals, and any changes over time.",
       "Adjusted care plan in small, practical steps.",
       "Connected to helpful resources when needed.",
     ],
     results: [
-      { value: "6 months", label: "Consistent follow-up" },
+      { value: "6 months", label: "Consistent follow up" },
       { value: "3", label: "Visits to reach a care plan" },
-      { value: "95%", label: "Adherence to follow-up visits" },
+      { value: "95%", label: "Adherence to follow up visits" },
     ],
     quote: {
       text: "Knowing I can check in regularly gives me peace of mind. I feel more in control of my health.",
@@ -211,7 +211,7 @@ export const stories: Story[] = [
         items: [
           "Consistent clinician for continuity of care",
           "Realistic goals tailored to daily life",
-          "Regular check-ins from the comfort of home",
+          "Regular check ins from the comfort of home",
         ],
       },
       {

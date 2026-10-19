@@ -11,7 +11,7 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Wellness hub",
   description:
-    "Plain-spoken, practical articles on prevention, mental health, nutrition, sleep, and family care — general wellness information from the clinicians of Lumina Health & Wellness.",
+    "Practical, clearly written articles on prevention, mental health, nutrition, sleep, and family care — general wellness information from the clinicians of Lumina Health & Wellness.",
   path: "/insights",
 });
 
@@ -28,7 +28,7 @@ export default async function InsightsPage() {
         ]}
         eyebrow="Wellness hub"
         title="Practical reads for everyday health."
-        intro="Warm, plain-spoken guidance on prevention, mental health, sleep, nutrition, and family care. Written to be useful, not overwhelming."
+        intro="Warm, straightforward guidance on prevention, mental health, sleep, nutrition, and family care. Written to be useful, not overwhelming."
         aside={
           <ul className="flex flex-wrap gap-x-4 gap-y-2">
             {categories.map((category) => (

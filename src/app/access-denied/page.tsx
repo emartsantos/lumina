@@ -64,7 +64,7 @@ async function IdentityPanel() {
   return (
     <section className="mt-10 max-w-2xl border border-line-strong bg-ink-raised p-6">
       <p className="font-mono text-[0.66rem] uppercase tracking-label text-accent">
-        Your signed-in identity
+        Your identity
       </p>
       <p className="mt-3 text-sm leading-relaxed text-fg-muted">
         Use these values to create the first administrator: put the{" "}

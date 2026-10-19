@@ -51,7 +51,7 @@ export function StaffForm() {
       <Field
         label="Role"
         htmlFor="role"
-        hint="Admins manage users, editors manage content, viewers are read-only."
+        hint="Admins manage users, editors manage content, viewers can only read."
         error={state.errors?.role}
       >
         <select

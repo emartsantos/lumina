@@ -4,11 +4,11 @@ export const siteSettings: SiteSettings = {
   name: "Lumina Health & Wellness",
   legalName: "Lumina Health & Wellness, PLLC",
   description:
-    "A nationwide telehealth practice for primary, preventive, and mental health care — licensed clinicians, same-week virtual visits, and unhurried appointments from wherever you are.",
+    "A nationwide telehealth practice for primary, preventive, and mental health care — licensed clinicians, same week virtual visits, and unhurried appointments from wherever you are.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://lumina-health-wellness.com",
   email: "hello@lumina-health-wellness.com",
   phone: "+1 (888) 540-1130",
-  hq: "Remote-first, United States",
+  hq: "Remote, United States",
   regions: ["All 50 states", "Washington, D.C.", "Puerto Rico"],
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com" },
@@ -26,7 +26,7 @@ export const siteSettings: SiteSettings = {
           description: "A clinician who knows your history",
         },
         {
-          label: "Same-day urgent care",
+          label: "Same day urgent care",
           href: "/services/same-day-urgent-care",
           description: "See someone today, not next month",
         },
@@ -69,7 +69,7 @@ export const siteSettings: SiteSettings = {
         {
           label: "Chronic care",
           href: "/specialties/chronic-care",
-          description: "Ongoing support for long-term conditions",
+          description: "Ongoing support for long term conditions",
         },
       ],
     },
@@ -92,7 +92,7 @@ export const siteSettings: SiteSettings = {
       title: "Care",
       items: [
         { label: "Virtual primary care", href: "/services/virtual-primary-care" },
-        { label: "Same-day urgent care", href: "/services/same-day-urgent-care" },
+        { label: "Same day urgent care", href: "/services/same-day-urgent-care" },
         { label: "Mental health & therapy", href: "/services/mental-health-therapy" },
         { label: "Prescriptions & refills", href: "/services/prescriptions-refills" },
         { label: "Women's health", href: "/services/womens-health" },
@@ -129,7 +129,7 @@ export const siteSettings: SiteSettings = {
   ],
   certifications: [
     "Licensed clinicians in all 50 states",
-    "HIPAA-aligned safeguards",
+    "HIPAA aligned safeguards",
     "SOC 2 Type II",
     "LegitScript certified",
   ],

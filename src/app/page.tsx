@@ -20,7 +20,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Care that fits your life",
   description:
-    "Lumina Health & Wellness is a nationwide telehealth practice: licensed clinicians, same-week virtual visits, and unhurried primary, preventive, and mental health care — from wherever you are.",
+    "Lumina Health & Wellness is a nationwide telehealth practice: licensed clinicians, same week virtual visits, and unhurried primary, preventive, and mental health care — from wherever you are.",
   path: "/",
 });
 
@@ -87,7 +87,7 @@ export default async function HomePage() {
                 Care that fits your <em className="wonk text-accent">life</em>.
               </h1>
               <p className="max-w-xl text-pretty text-lg leading-relaxed text-fg-muted">
-                Licensed clinicians, same-week virtual visits, and unhurried
+                Licensed clinicians, same week virtual visits, and unhurried
                 appointments you can join from home. Primary, preventive, and
                 mental health care — across all fifty states.
               </p>

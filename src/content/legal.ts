@@ -106,7 +106,7 @@ export const legalDocs: LegalDoc[] = [
       { kind: "h2", text: "Disclaimers and limitation of liability" },
       {
         kind: "p",
-        text: "The services are provided on an as-available basis. To the extent permitted by law, Lumina is not liable for indirect or consequential damages arising from your use of the services. Nothing in these terms limits rights you may have under applicable law.",
+        text: "The services are provided as available. To the extent permitted by law, Lumina is not liable for indirect or consequential damages arising from your use of the services. Nothing in these terms limits rights you may have under applicable law.",
       },
       { kind: "h2", text: "Changes to these terms" },
       {
@@ -128,7 +128,7 @@ export const legalDocs: LegalDoc[] = [
       },
       {
         kind: "p",
-        text: "Our public website does not collect health information. Protected health information is handled within our clinical platform, which is designed around HIPAA-aligned safeguards. Clinicians treat you under a signed agreement that sets out how your information is protected.",
+        text: "Our public website does not collect health information. Protected health information is handled within our clinical platform, which is designed around HIPAA aligned safeguards. Clinicians treat you under a signed agreement that sets out how your information is protected.",
       },
       { kind: "h2", text: "How we may use your health information" },
       {
@@ -189,8 +189,8 @@ export const legalDocs: LegalDoc[] = [
       {
         kind: "list",
         items: [
-          "Semantic, keyboard-navigable interfaces.",
-          "Support for reduced-motion and system preferences.",
+          "Semantic, keyboard navigable interfaces.",
+          "Support for reduced motion and system preferences.",
           "Colour contrast verified against AA thresholds.",
           "Alternative text for meaningful images.",
           "Periodic manual and automated accessibility assessments.",

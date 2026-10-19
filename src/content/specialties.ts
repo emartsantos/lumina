@@ -8,19 +8,19 @@ export const specialties: Specialty[] = [
     summary:
       "Everyday primary care for adults and families, from checkups and prevention to the small concerns you want to talk through with someone you trust.",
     pressures: [
-      "Months-long waits for a first appointment",
+      "Waits of several months for a first appointment",
       "A different clinician every visit, repeating your history each time",
       "Appointments that last ten minutes when you need more",
       "Care split between clinics that do not talk to each other",
     ],
     approach: [
       "A primary care clinician you choose and keep over time.",
-      "Same-week visits, with evening and weekend availability.",
-      "Thirty-minute appointments built around your questions.",
+      "Same week visits, with evening and weekend availability.",
+      "Thirty minute appointments built around your questions.",
       "One shared record across your whole household.",
     ],
     outcomes: [
-      { value: "Same-week", label: "Appointments" },
+      { value: "Same week", label: "Appointments" },
       { value: "4.9/5", label: "Patient rating" },
       { value: "50 states", label: "Licensed coverage" },
     ],
@@ -37,10 +37,10 @@ export const specialties: Specialty[] = [
       {
         kind: "list",
         items: [
-          "Annual wellness visits and age-based screenings.",
-          "Prevention, vaccines, and healthy-living guidance.",
+          "Annual wellness visits and screenings by age.",
+          "Prevention, vaccines, and healthy living guidance.",
           "Ongoing conditions like blood pressure and diabetes.",
-          "Referrals to specialists with coordinated follow-up.",
+          "Referrals to specialists with coordinated follow up.",
           "Medication reviews and refills.",
           "Family plans that cover the people in your home.",
         ],
@@ -117,7 +117,7 @@ export const specialties: Specialty[] = [
     ],
     approach: [
       "Start with photos taken from your phone, no referral needed.",
-      "Board-certified clinicians review and treat your concern.",
+      "Board certified clinicians review and treat your concern.",
       "Clear treatment plans adjusted as your skin responds.",
       "Message your clinician with updates between visits.",
     ],
@@ -144,7 +144,7 @@ export const specialties: Specialty[] = [
           "Rashes and allergic reactions.",
           "Rosacea and redness.",
           "Fungal and bacterial skin infections.",
-          "Spot checks with guidance on in-person follow-up.",
+          "Spot checks with guidance on following up in person.",
         ],
       },
       {
@@ -168,12 +168,12 @@ export const specialties: Specialty[] = [
     ],
     approach: [
       "Clinicians experienced in women's health who take time to listen.",
-      "Same-week appointments, often the same week you ask.",
-      "Plain-language explanations and clear treatment plans.",
+      "Same week appointments, often the same week you ask.",
+      "Explanations in plain language and clear treatment plans.",
       "Private, secure video visits from home.",
     ],
     outcomes: [
-      { value: "Same-week", label: "Appointments" },
+      { value: "Same week", label: "Appointments" },
       { value: "50 states", label: "Licensed coverage" },
       { value: "No waiting rooms", label: "Private and convenient" },
     ],
@@ -194,7 +194,7 @@ export const specialties: Specialty[] = [
           "Irregular, heavy, or painful periods.",
           "Urinary tract and yeast infections.",
           "Menopause and perimenopause support.",
-          "Preventive screenings and check-ins.",
+          "Preventive screenings and check ins.",
           "Confidential care, on your schedule.",
         ],
       },
@@ -212,26 +212,26 @@ export const specialties: Specialty[] = [
     summary:
       "Ongoing care for conditions like diabetes, high blood pressure, and asthma, with a clinician who tracks your progress over time.",
     pressures: [
-      "Conditions that need regular attention, not one-off visits",
+      "Conditions that need regular attention, not the occasional visit",
       "Medications that get out of sync or run out",
       "Results that are hard to understand without help",
       "Care that is scattered across clinics and specialists",
     ],
     approach: [
       "A dedicated clinician who follows your condition over time.",
-      "Regular check-ins and refills managed in one place.",
+      "Regular check ins and refills managed in one place.",
       "Clear explanations of results and what they mean for you.",
-      "Coordinated referrals and follow-up across your care.",
+      "Coordinated referrals and follow up across your care.",
     ],
     outcomes: [
-      { value: "Same-week", label: "Appointments" },
+      { value: "Same week", label: "Appointments" },
       { value: "1 place", label: "Your whole care plan" },
-      { value: "Evenings & weekends", label: "Check-ins available" },
+      { value: "Evenings & weekends", label: "Check ins available" },
     ],
     detail: [
       {
         kind: "p",
-        text: "Managing a long-term condition takes more than an occasional appointment. Lumina gives you a clinician who knows your history and checks in regularly, so small problems get caught before they grow.",
+        text: "Managing a long term condition takes more than an occasional appointment. Lumina gives you a clinician who knows your history and checks in regularly, so small problems get caught before they grow.",
       },
       { kind: "h2", text: "Small steps, tracked over time" },
       {
@@ -246,7 +246,7 @@ export const specialties: Specialty[] = [
           "Asthma and COPD support.",
           "Thyroid and other ongoing conditions.",
           "Medication reviews and refills in one place.",
-          "Referrals and follow-up coordinated for you.",
+          "Referrals and follow up coordinated for you.",
         ],
       },
       {

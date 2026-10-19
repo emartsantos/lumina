@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { Rule } from "@/components/site/Rule";
@@ -33,10 +35,20 @@ export async function generateMetadata(
   });
 }
 
-export default async function ProviderPage(
-  props: PageProps<"/providers/[slug]">,
-) {
-  const { slug } = await props.params;
+export default function ProviderPage(props: PageProps<"/providers/[slug]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <ProviderDetail params={props.params} />
+    </Suspense>
+  );
+}
+
+async function ProviderDetail({
+  params,
+}: {
+  params: PageProps<"/providers/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const provider = await getProvider(slug);
   if (!provider) notFound();
 
@@ -120,7 +132,7 @@ export default async function ProviderPage(
           </div>
           <p className="mt-6 max-w-2xl text-xs leading-relaxed text-fg-subtle">
             Care is provided by independent, licensed clinicians. Booking a visit
-            does not create a doctor-patient relationship until you and the
+            does not establish a treating relationship until you and the
             clinician have both agreed to care.
           </p>
         </Container>

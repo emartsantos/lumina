@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/site/Container";
+import { DetailSkeleton } from "@/components/site/DetailSkeleton";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { Rule } from "@/components/site/Rule";
@@ -29,8 +31,20 @@ export async function generateMetadata(
   });
 }
 
-export default async function RolePage(props: PageProps<"/roles/[slug]">) {
-  const { slug } = await props.params;
+export default function RolePage(props: PageProps<"/roles/[slug]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <RoleDetail params={props.params} />
+    </Suspense>
+  );
+}
+
+async function RoleDetail({
+  params,
+}: {
+  params: PageProps<"/roles/[slug]">["params"];
+}) {
+  const { slug } = await params;
   const role = await getRole(slug);
   if (!role) notFound();
 

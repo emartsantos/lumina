@@ -28,7 +28,7 @@ const reasons = [
   },
   {
     title: "Remote by design",
-    body: "A distributed team across the country, with written-first, flexible collaboration.",
+    body: "A distributed team across the country, with flexible collaboration that starts in writing.",
   },
 ];
 

@@ -47,7 +47,7 @@ export const insights: Insight[] = [
     slug: "managing-stress-in-daily-life",
     title: "Managing stress in daily life",
     category: "Mental health",
-    excerpt: "Practical ways to handle everyday stress and support your mental well-being.",
+    excerpt: "Practical ways to handle everyday stress and support your mental wellbeing.",
     publishedAt: "2025-09-15",
     readingMinutes: 6,
     featured: true,
@@ -63,7 +63,7 @@ export const insights: Insight[] = [
       },
       {
         kind: "p",
-        text: "Pay attention to what triggers stress and what helps you recover. Build a few go-to strategies so you can use them when needed.",
+        text: "Pay attention to what triggers stress and what helps you recover. Keep a few strategies ready so you can use them when needed.",
       },
       {
         kind: "list",
@@ -139,11 +139,11 @@ export const insights: Insight[] = [
     detail: [
       {
         kind: "h2",
-        text: "Create a sleep-friendly routine",
+        text: "Build a routine that helps you sleep",
       },
       {
         kind: "p",
-        text: "Consistent sleep and wake times help regulate your body's clock. Aim for a relaxing wind-down routine that signals it's time to rest.",
+        text: "Consistent sleep and wake times help regulate your body's clock. Aim for a relaxing wind down routine that signals it's time to rest.",
       },
       {
         kind: "p",
@@ -160,7 +160,7 @@ export const insights: Insight[] = [
       },
       {
         kind: "quote",
-        text: "Rest is a key part of overall well-being.",
+        text: "Rest is a key part of overall wellbeing.",
         attribution: "Dr. Amari Williams",
       },
       {
@@ -189,7 +189,7 @@ export const insights: Insight[] = [
       },
       {
         kind: "p",
-        text: "Focus on what you can control: staying active, eating well, avoiding tobacco, and keeping up with check-ups. Small changes build over the years.",
+        text: "Focus on what you can control: staying active, eating well, avoiding tobacco, and keeping up with checkups. Small changes build over the years.",
       },
       {
         kind: "list",
@@ -231,7 +231,7 @@ export const insights: Insight[] = [
       },
       {
         kind: "p",
-        text: "Make time for check-ins, model healthy habits, and seek care early when something feels off. These habits create a strong foundation for the whole family.",
+        text: "Make time to check in, model healthy habits, and seek care early when something feels off. These habits create a strong foundation for the whole family.",
       },
       {
         kind: "list",
@@ -239,7 +239,7 @@ export const insights: Insight[] = [
           "Share meals together when possible",
           "Stay active as a family",
           "Keep lines of communication open",
-          "Prioritize regular check-ups for all ages",
+          "Prioritize regular checkups for all ages",
         ],
       },
       {

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     template: "%s · Lumina Health & Wellness",
   },
   description:
-    "Lumina Health & Wellness is a nationwide direct-to-consumer telehealth practice: licensed clinicians, same-week virtual visits, and unhurried primary and preventive care — from wherever you are.",
+    "Lumina Health & Wellness is a nationwide telehealth practice: licensed clinicians, same week virtual visits, and unhurried primary and preventive care — from wherever you are.",
   applicationName: "Lumina Health & Wellness",
   keywords: [
     "telehealth",
